@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OpenAPI-Compare-Suite" parallel="false">
+    <test name="DoctorResource-Compare">
+        <classes>
+            <class name="com.cegeka.api.CompareDoctorResourceIT"/>
+        </classes>
+    </test>
+    <test name="UserResource-Compare">
+        <classes>
+            <class name="com.cegeka.api.CompareUserResourceIT"/>
+        </classes>
+    </test>
+    <test name="PatientResource-Compare">
+        <classes>
+            <class name="com.cegeka.api.ComparePatientResourceIT"/>
+        </classes>
+    </test>
+</suite>
