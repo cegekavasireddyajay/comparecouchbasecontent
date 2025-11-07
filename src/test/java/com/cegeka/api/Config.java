@@ -14,13 +14,13 @@ public class Config {
     public static final String BEARER_TOKEN = System.getProperty("token", System.getenv("API_TOKEN"));
 
     // Default path/query values (override via -DmasterId=... etc.)
-    public static final String MASTER_ID = System.getProperty("masterId", "autotest_de");
+    public static final String MASTER_ID = System.getProperty("masterId", "autotest_admin");
     public static final String DOCTOR_NUMBER = System.getProperty("doctorNumber", "608488");
-    public static final String VIO_NUMBER = System.getProperty("vioNumber", "100004191");
+    public static final String VIO_NUMBER = System.getProperty("vioNumber", "100000481");
     public static final String ANALYSIS_NUMBER = System.getProperty("analysisNumber", "24976");
-    public static final String REQUEST_NUMBER = System.getProperty("requestNumber", "50116671");
+    public static final String REQUEST_NUMBER = System.getProperty("requestNumber", "50128452");
     public static final String FILE_IDENTIFIER = System.getProperty("fileIdentifier", "FILE001");
-    public static final String PATIENT_ID = System.getProperty("patientId", "1779500");
+    public static final String PATIENT_ID = System.getProperty("patientId", "6d6a0351-7182-41fb-a057-bf03011f9bce");
     public static final String INVOICE_DOCUMENT_ID = System.getProperty("invoiceDocumentId", "INV001");
 
     // doctorContext defaults
@@ -30,7 +30,8 @@ public class Config {
                 "masterId", MASTER_ID,
                 "userShortId", System.getProperty("userShortId", "u1"),
                 "myId", System.getProperty("myId", "me"),
-                "patientId", PATIENT_ID
+                "patientId", PATIENT_ID,
+                "pageSize", "400"
         );
     }
 }

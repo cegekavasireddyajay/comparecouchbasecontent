@@ -24,7 +24,8 @@ public class CompareUserResourceIT {
 
         String bodyA = a.asString();
         String bodyB = b.asString();
-        System.out.println("bodyB = " + bodyB);
+        System.out.println("bodyAOld = " + bodyA);
+        System.out.println("bodyBNew = " + bodyB);
 
         JsonUtils.assertEquivalent(bodyA, bodyB);
     }
